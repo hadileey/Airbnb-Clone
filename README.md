@@ -1,14 +1,14 @@
 # 🏡 Airbnb Clone – Next‑Gen UI Web Project
 
-A clean and modern **Airbnb Clone UI** built using **HTML & CSS**, focusing on responsive design, real‑world UI layout, and modern web aesthetics.
+A clean and modern **Airbnb Clone UI** built using **HTML & CSS**,<br> focusing on responsive design, real‑world UI layout, and modern web aesthetics.
 
 ---
 
 ## 👤 Author
 
 **Hadil K K**
-🎓 BE – Computer Science & Engineering
-🏫 Kalaignarkarunanidhi Institute of Technology
+<br><br>🎓 BE – Computer Science & Engineering
+<br>🏫 Kalaignarkarunanidhi Institute of Technology
 
 ---
 
@@ -155,12 +155,6 @@ cd Airbnb-clone
 
 ---
 
-## 📸 Screenshots
-
-> Add screenshots from the `screenshots/` folder here.
-
----
-
 ## 🚀 Future Improvements
 
 * JavaScript interactivity
@@ -186,3 +180,4 @@ This project is licensed under the **MIT License**.
 ---
 
 ⭐ **If you like this project, don’t forget to star the repository!**
+
