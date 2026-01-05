@@ -1,0 +1,373 @@
+body{
+    padding: 0px 80px 0px 80px;
+    margin: auto;
+    font-family: "Nunito Sans", sans-serif;
+}
+
+.navbar {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0; 
+    background: white;
+    z-index: 1000;
+    padding-bottom: 25px;
+    border-bottom: 1px solid rgba(128, 128, 128, 0.107);
+}
+
+.sub1 {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.first {
+    padding-top: 25px;
+    margin-left: 80px;
+}
+
+.first img {
+    width: 100px;
+    filter: contrast(200%);
+}
+
+.first:hover {
+    cursor: pointer;
+}
+
+.second {
+    display: flex;
+    justify-content: flex-end;
+    width: 300px;
+    align-items: center;
+    transform: scale(1, 1.1);
+}
+
+.small {
+    display: flex;
+    justify-content: center;
+    height: 75px;
+    align-items: center;
+    font-weight: bold;
+    gap: 30px;
+}
+
+.stays, .exp {
+    opacity: 0.6;
+    padding: 8px 16px;
+    border-radius: 100px;
+    transition: all .3s;
+}
+
+.active1{
+    font-weight: bold !important;
+    opacity: 1 !important;
+    background: #00000000 !important;
+    cursor:default !important;
+}
+
+.stays:hover, .exp:hover {
+    opacity: .7;
+    cursor: pointer;
+    background: #00000011;
+}
+
+.sub2 {
+    display: flex;
+    justify-content: center;
+    position: sticky;
+    top: 60px; 
+}
+
+.big {
+    display: flex;
+    width: 850px;
+    height: 65px;
+    border-radius: 100px;
+    justify-content: space-between;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 3px 8px 0px;
+    border: 1px solid rgba(128, 128, 128, 0.286);
+}
+
+.big .where {
+    width: 33%;
+    border-radius: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 3px;
+    align-items: start;
+    padding-left: 30px;
+    transition: all 0.3s;
+}
+
+.big .where:hover {
+    background: #00000018;
+    cursor: pointer;
+}
+
+.big .where:hover ~ .line.l1 {
+    opacity: 0;
+}
+
+.where h3 {
+    padding-left: 2px;
+}
+
+#destination {
+    outline: none;
+    border: none;
+    background: none;
+}
+
+#destination::placeholder {
+    font-size: 15px;
+}
+
+.big .checkin, .checkout {
+    width: 16.5%;
+    border-radius: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    padding-left: 30px;
+    transition: all 0.4s;
+}
+
+.big .checkin:hover, .checkout:hover {
+    background: #00000018;
+    cursor: pointer;
+}
+
+.big .checkin:hover ~ .l2,
+.big .checkin:hover ~ .l1 {
+    opacity: 0 !important;
+}
+
+.big h3 {
+    font-size: 12px;
+    margin: 0%;
+}
+
+.big p {
+    margin: 0%;
+    opacity: 0.8;
+}
+
+.big .who {
+    display: flex;
+    width: 33%;
+    border-radius: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 10px;
+    padding-left: 30px;
+    transition: all 0.3s;
+}
+
+.big .who:hover {
+    background: #00000018;
+    cursor: pointer;
+}
+
+.search1 {
+    display: flex;
+    background: #eb2553;
+    padding: 14px;
+    justify-content: space-around;
+    border-radius: 100px;
+    color: rgb(255, 255, 255);
+    align-items: center;
+}
+
+.search1 p {
+    font-weight: bold;
+    margin-left: 6px;
+    font-size: 18px;
+    color: rgb(255, 255, 255) !important;
+    display: none;
+}
+
+.third {
+    display: flex;
+    height: 75px;
+    align-items: center;
+    justify-content: space-between;
+    margin-right: 80px;
+}
+
+.third .home {
+    font-weight: bold;
+    font-size: 15px;
+    padding: 8px 12px;
+    border-radius: 50px;
+    transition: all 0.3s;
+}
+
+.third .home:hover{
+    background: #00000011;
+    cursor: pointer;
+}
+
+.third .glob {
+    font-weight: bold;
+    font-size: 18px;
+    padding: 8px 12px;
+    border-radius: 50px;
+    transition: all 0.3s;
+}
+
+.third .glob:hover{
+    background: #00000011;
+    cursor: pointer;
+}
+
+.third .person {
+    padding: 8px 5px 8px 5px;
+    border: 1px solid #8080803d;
+    color: rgb(75, 75, 75);
+    width: 70px;
+    border-radius: 100px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    transition: all 0.3s;
+}
+
+.third .person:hover{
+    box-shadow: 0px 1px 8px #0000002a;
+    cursor: pointer;
+}
+
+.third .person .fa-user-circle {
+    font-size: 30px;
+}
+.line {
+    width: 1px;
+    height: 35px; 
+    background: #80808032; 
+    margin: 15px 0px 15px 0px; 
+}
+
+.icons {
+    display: flex;
+    justify-content: space-between;
+}
+
+.icons img {
+    width: 25px;
+    display: inline;
+}
+
+.icon {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    transition: all 0.07s ease-in-out 0s;
+    border-bottom: 3px solid rgba(0, 0, 0, 0); 
+    opacity: 0.5;
+    transition: all 0.3s;
+}
+
+.icon:hover{
+    border-bottom: 3px solid #00000023;
+    cursor: pointer;
+    opacity: 1;
+}
+
+.active{
+    border-bottom: 3px solid #000000 !important;
+    cursor: default !important;
+    opacity: 1 !important;
+}
+
+.icon p {
+    font-size: 12px;
+    font-weight: bold;
+    margin-top: 5px;
+}
+
+.mainsec{
+    margin-top: 200px;
+}
+
+
+.mainpic {
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-row-gap: 40px;
+    grid-column-gap: 2%;
+}
+
+.mainpic img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 10px;
+    position: relative;
+    display: inline-block;
+}
+
+.image {
+    border-radius: 10px;
+    position: relative;
+}
+
+.image:hover {
+    cursor: pointer;
+}
+
+.image p, h4 {
+    margin: 0px;
+}
+.image .light {
+    color: #00000063;
+}
+
+.live{
+    padding: 6px 16px;
+    display: flex;
+    opacity: 0.8;
+    align-items: center;
+    background: #ffffff;
+    border-radius: 50px;
+    position: absolute;
+    text-align: center;
+    top: 12px;
+    left: 12px; 
+    transition: all 0.3s;
+    font-weight: bold;
+}
+
+.round{
+    padding: 9px;
+    display: flex;
+    opacity: 0.8;
+    align-items: center;
+    background: #ffffff;
+    border-radius: 50px;
+    position: absolute;
+    text-align: center;
+    top: 12px;
+    right: 12px; 
+    transition: all 0.3s;
+}
+
+.round:hover{
+    transform: scale(1.05,1.05);
+    cursor: pointer;
+    opacity: 1;
+}
+
+.round img{
+    width: 12px;
+    height: 12px;
+}
+
+.s2{
+    margin-top: 50px;
+}
